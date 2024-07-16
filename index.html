@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI by Rizqi Raffy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<main>
+    <!-- Start Content -->
+    <section id="section1">
+        <div class="container">
+            <!-- Main Article -->
+            <header>
+                <h1>Kalkulator BMI</h1>
+            </header>
+            <p>Kalkulator BMI (Indeks Massa Tubuh) membantu untuk memahami hubungan antara berat badan dan tinggi badan. BMI adalah alat sederhana namun efektif untuk mengidentifikasi apakah seseorang berada dalam kategori berat badan yang sehat, kurang berat badan, kelebihan berat badan, atau obesitas. Mengetahui status BMI dapat membantu untuk mengetahui tindakan pencegahan atau perbaikan yang diperlukan untuk menjaga kesehatan tubuh dan mengurangi risiko penyakit terkait berat badan. Maka, segera cek status BMI anda dan konsultasikan pada ahli gizi dan dokter spesialis untuk manajemen kesehatan pribadi dan pengambilan keputusan yang lebih baik mengenai gaya hidup sehat!</p>
+            <!-- Form -->
+            <div class="form-container">
+                <div class="input-group">
+                    <label for="jenis-kelamin">Jenis Kelamin:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="pria" name="jenis-kelamin" value="pria" checked>
+                        <label for="pria">Pria</label>
+                        <input type="radio" id="wanita" name="jenis-kelamin" value="wanita">
+                        <label for="wanita">Wanita</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="berat-badan">Berat Badan (kg):</label>
+                    <input type="number" id="berat-badan" value="0" min="0">
+                </div>
+                <div class="input-group">
+                    <label for="usia">Usia (tahun):</label>
+                    <input type="number" id="usia" value="0" min="0">
+                </div>
+                <div class="input-group">
+                    <label for="tinggi-badan">Tinggi Badan (cm):</label>
+                    <input type="number" id="tinggi-badan" value="0" min="0">
+                </div>
+
+                <button id="hitung-bmi">Hitung BMI</button>
+                <button id="reset">Reset</button>
+            </div>
+            <!-- Form Article -->
+            <div class="announcement">
+                <header>
+                    <h3>Cara menggunakan Kalkulator BMI by Rizqi Raffy</h3>
+                </header>
+                <div>
+                    <ul>
+                        <li>Masukkan jenis kelamin</li>
+                        <li>Masukkan berat badan Anda (dalam satuan kg)</li>
+                        <li>Masukkan usia Anda (dalam satuan tahun)</li>
+                        <li>Masukkan tinggi badan Anda (dalam satuan cm)</li>
+                        <li>Klik "Hitung BMI"</li>
+                        <li>Hasil perhitungan BMI anda akan muncul</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- General Article -->
+            <h3>Catatan!</h3>
+            <article>
+                <p>Berat badan ideal setiap orang berbeda-beda. Oleh karena itu, cara untuk tahu apakah berat badan tergolong ideal atau tidak yaitu dengan mengetahu IMT atau BMI. Selain berat badan, Anda juga harus mengetahui tinggi badan yang merupakan salah satu komponen pengukurannya. BMI bukanlah pengukuran yang akurat karena tidak bisa menjelaskan secara detail mengenai masalah berat badan seseorang. Hasil perhitungan BMI juga tidak dapat memperhitungkan lemak dalam tubuh untuk mengukur risiko penyakit kronis. Di sisi lain, Anda dapat mengetahui informasi dasar mengenai masalah berat badan secara keseluruhan. Angka BMI bisa menjadi peringatan bagi Anda untuk menjaga berat badan normal agar hidup lebih sehat.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Result Content -->
+    <section id="section2">
+        <div class="result-container">
+            <!-- Result Form -->
+            <h2>Hasil</h2>
+            <div class="result-form">
+                <div class="bmi-result">
+                    <p id="bmi-description">Error</p>
+                    <p id="bmi-value">0</p>
+                    <p id="bmi-range">Tidak Diketahui</p>
+                </div>
+                <button id="download-bmi">Download Hasil BMI</button>
+            </div>
+
+            <!-- Announcement -->
+            <div class="announcement">
+                <h3>Perhatian!</h3>
+                <article>
+                    <p>Hasil perhitungan Kalkulator BMI ini hanya data digunakan sebagai informasi mengenai berat badan. Selalu konsultasikan kepada tenaga medis profesional untuk mendapatkan hasil yang lebih akurat, informasi kesehatan, dan tindakan medis yang tepat</p>
+                </article>
+            </div>
+
+            <!-- Ahli Gizi Article -->
+            <div id="articleOutput1"></div>
+            <button id="konsultasi-gizi">Konsultasi Ahli Gizi Via Aplikasi</button>
+            <button id="registrasi-gizi">Registrasi Online Ahli Gizi</button>
+
+            <!-- Dokter Article -->
+            <div id="articleOutput2"></div>
+            <button id="konsultasi-dokter">Konsultasi Dokter Via Aplikasi</button>
+            <button id="registrasi-online">Registrasi Online Dokter</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</main>
+</html>
